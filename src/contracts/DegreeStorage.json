@@ -1,0 +1,227 @@
+{
+    "contractName": "DegreeStorage",
+    "abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32[]",
+					"name": "_proofHashes",
+					"type": "bytes32[]"
+				},
+				{
+					"internalType": "string[]",
+					"name": "_names",
+					"type": "string[]"
+				},
+				{
+					"internalType": "string[]",
+					"name": "_issuedDates",
+					"type": "string[]"
+				},
+				{
+					"internalType": "string[]",
+					"name": "_pictures",
+					"type": "string[]"
+				}
+			],
+			"name": "addDegrees",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "bytes32",
+					"name": "proofHash",
+					"type": "bytes32"
+				},
+				{
+					"indexed": false,
+					"internalType": "string",
+					"name": "name",
+					"type": "string"
+				},
+				{
+					"indexed": false,
+					"internalType": "string",
+					"name": "issuedDate",
+					"type": "string"
+				},
+				{
+					"indexed": false,
+					"internalType": "string",
+					"name": "picture",
+					"type": "string"
+				}
+			],
+			"name": "DegreeAdded",
+			"type": "event"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"name": "degrees",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "name",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "issuedDate",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "picture",
+					"type": "string"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "index",
+					"type": "uint256"
+				}
+			],
+			"name": "getDegree",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "_proofHash",
+					"type": "bytes32"
+				}
+			],
+			"name": "getDegreeByProofHash",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getTotalDegrees",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"name": "proofHashes",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "_name",
+					"type": "string"
+				}
+			],
+			"name": "searchDegreesByName",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "string",
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"internalType": "string",
+							"name": "issuedDate",
+							"type": "string"
+						},
+						{
+							"internalType": "string",
+							"name": "picture",
+							"type": "string"
+						}
+					],
+					"internalType": "struct DegreeStorage.Degree[]",
+					"name": "",
+					"type": "tuple[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	],
+    "networks": {
+        "11155111": {
+            "events": {},
+            "links": {},
+            "address": "0xaCd8E586C4B64aDECaF55Cff3a2EdC025F692f3C",
+            "transactionHash": "0xYourTransactionHash"
+        }
+    }
+}
